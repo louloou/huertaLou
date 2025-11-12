@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuertaLou</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        
+        <a href="#" class="logo">Huerta<span>.</span></a>
+        
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+        </nav>
+    </header>
+    
+    <div class="form">
+        <h1>Cargar datos de la Huerta</h1>
+        <input type="text" name="dni" id="dni" placeholder="DNI" />
+        <input type="text" id="nombre" placeholder="Nombre" />
+        <input type="text" id="apellido" placeholder="Apellido" />
+        <input type="number" id="edad" placeholder="Edad" />  
+        <input type="number" id="nota" placeholder="Ingresa la nota">  
+        <button id="agregar">Agregar</button>
+    </div>
+    
+</body>
+<script src="db.js" type="module"></script>
+
+</html>
