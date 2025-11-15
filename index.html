@@ -6,33 +6,25 @@
     <title>HuertaLou</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <input type="checkbox" name="" id="toggler">
-        <label for="toggler" class="fas fa-bars"></label>
-        
-        <a href="#" class="logo">Huerta<span>.</span></a>
-        
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#products">products</a>
-            <a href="#review">review</a>
-        </nav>
+    <header class="header">
+        <h1> Monitor Inteligente de Plantas</h1>
+        <p class="subtitulo">Visualización en tiempo real del estado de tu huerta</p>
     </header>
-    
-    <div class="form">
-        <h1>Cargar datos de la Huerta</h1>
-        <input type="text" name="dni" id="dni" placeholder="DNI" />
-        <input type="text" id="nombre" placeholder="Nombre" />
-        <input type="text" id="apellido" placeholder="Apellido" />
-        <input type="number" id="edad" placeholder="Edad" />  
-        <input type="number" id="nota" placeholder="Ingresa la nota">  
-        <button id="agregar">Agregar</button>
+
+    <div class="contenedor">
+        <h2>Estado de la Planta</h2>
+
+        <img id="planta" src="plantaNormal.png" class="planta" width="10">
+
+        <div class="datos">
+            <p>🌿 Humedad del suelo: <span id="suelo">--</span>%</p>
+            <p>💧 Humedad del aire: <span id="aire">--</span>%</p>
+            <p>🌡️ Temperatura: <span id="temp">--</span>°C</p>
+        </div>
     </div>
-    
 </body>
-<script src="db.js" type="module"></script>
+
+<script src="script.js" type="module"></script>
 
 </html>
